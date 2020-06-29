@@ -22,5 +22,6 @@ RUN apt-get update && apt-get install -y \
   rm android_sdk.zip && \
   alias sdkmanager='sdkmanager --sdk_root=${ANDROID_SDK_ROOT}' && \
   yes | sdkmanager --licenses && \
+  chmod 777 -R /opt/android-sdk && \
   apt-get purge -y unzip && apt-get -y autoclean && apt-get -y autoremove && \
   rm -rf /var/lib/apt/lists/*
