@@ -7,7 +7,7 @@ ENV PATH="$ANDROID_SDK_ROOT/tools/bin:${PATH}"
 
 RUN apt-get update && apt-get install -y \
   gcc g++ gdb libboost-all-dev \
-  ant libgdk-pixbuf2.0-dev python-pip cmake libx11-dev libxmu-dev libglu1-mesa-dev libgl2ps-dev libxi-dev libzip-dev libpng-dev libcurl4-gnutls-dev libfontconfig1-dev libsqlite3-dev libglew-dev libssl-dev libgtk-3-dev libglfw3 libglfw3-dev xorg-dev && \
+  ant libgdk-pixbuf2.0-dev python-pip cmake libx11-dev libxmu-dev libglu1-mesa-dev libgl2ps-dev libxi-dev libzip-dev libpng-dev libcurl4-gnutls-dev libfontconfig1-dev libsqlite3-dev libglew-dev libssl-dev libgtk-3-dev libglfw3 libglfw3-dev xorg-dev unzip && \
   cd /opt && \
   ANDROID_NDK=$(curl -sX GET "https://developer.android.com/ndk/downloads" | grep href | grep -m 1 linux-x86_64 | sed "s/.*=\"//g" | sed "s/\".*//g") && \
   curl -o android_ndk.zip -L ${ANDROID_NDK} && \
