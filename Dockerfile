@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
   pip install lz4 && \
   wget https://apt.devkitpro.org/install-devkitpro-pacman && \
   chmod +x ./install-devkitpro-pacman && \
-  ./install-devkitpro-pacman && \
+  yes | ./install-devkitpro-pacman && \
   rm ./install-devkitpro-pacman && \
   apt-get -y autoclean && apt-get -y autoremove && \
   rm -rf /var/lib/apt/lists/*
