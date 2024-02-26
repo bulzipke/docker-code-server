@@ -1,4 +1,5 @@
 FROM linuxserver/code-server:latest
+MAINTAINER bulzipke <bulzipke@naver.com>
 
 ENV DEVKITPRO=/opt/devkitpro \
     DEVKITARM=/opt/devkitpro/devkitARM \
