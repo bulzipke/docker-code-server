@@ -5,7 +5,7 @@ ENV DEVKITPRO=/opt/devkitpro \
   DEVKITARM=/opt/devkitpro/devkitARM \
   DEVKITPPC=/opt/devkitpro/devkitPPC
 
-COPY .vimrc /root/
+COPY vim_config /root/
  
 RUN apt-get update && apt-get install -y \
   python3 python3-venv python3-pip subversion ffmpeg wget zip vim && \

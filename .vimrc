@@ -1,9 +1,0 @@
-set autoindent
-set nu
-set mouse=
-set nobackup
-set noundofile
-set nowrap
-colorscheme evening
-set ts=4
-set shiftwidth=4
