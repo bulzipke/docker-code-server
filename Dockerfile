@@ -10,6 +10,8 @@ COPY vim_config /root/
 RUN apt-get update && apt-get install -y \
   python3 python3-venv python3-pip subversion ffmpeg wget zip vim && \
   ln -s /usr/bin/python3 /usr/bin/python && \
+  python3 -m venv /opt/venv && \
+  . /opt/venv/bin/activate && \
   wget https://apt.devkitpro.org/install-devkitpro-pacman && \
   chmod +x ./install-devkitpro-pacman && \
   yes | ./install-devkitpro-pacman && \
