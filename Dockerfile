@@ -2,9 +2,9 @@ FROM linuxserver/code-server:latest
 MAINTAINER bulzipke <bulzipke@naver.com>
 
 ENV DEVKITPRO=/opt/devkitpro \
-  DEVKITARM=$DEVKITPRO/devkitARM \
-  DEVKITPPC=$DEVKITPRO/devkitPPC \
-  CTRULIB=$DEVKITPRO/libctru
+  DEVKITARM=/opt/devkitpro/devkitARM \
+  DEVKITPPC=/opt/devkitpro/devkitPPC \
+  CTRULIB=/opt/devkitpro/libctru
   
 COPY vim_config /root/
  
